@@ -8,6 +8,7 @@ interface PricingCardProps {
     isActive?: boolean;
 }
 
+
 export const PricingCard: React.FC<PricingCardProps> = ({
     title,
     price,
@@ -17,14 +18,19 @@ export const PricingCard: React.FC<PricingCardProps> = ({
     more,
     isActive
 }) => {
+
     return (
         <div
-            className={`p-6 relative text-[#B4B4B4] flex flex-col gap-y-4 w-[480px] pb-20 h-[560px] ${isActive ? "h-[620px] border-[#3F90FF] border-[1px]" : ""}`}
+            className={`p-6 relative text-[#B4B4B4] flex flex-col gap-y-4 w-[480px] pb-20 ${isActive ? "h-[620px] border-[#3F90FF] border-[1px]" : " h-[540px]"}`}
             style={{
                 background: 'linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)',
                 borderRadius: '10px',
             }}
         >
+            {
+                isActive &&
+                <img src="/icons/fill-star.svg" alt="" className="absolute -top-7 -right-7" />
+            }
             <h4 className="font-normal text-2xl uppercase flex items-center gap-3 mt-3">
                 <svg
                     width="21"
@@ -46,7 +52,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
                 <span className="text-2xl">/{billingCycle}</span>
             </h5>
             <div className="mt-3">
-                <p className="flex items-center gap-3 text-[#B4B4B4] font-medium text-xl">
+                <p className="flex items-center gap-3 text-[#B4B4B4] font-medium text-lg">
                     {description}{' '}
                     <svg
                         width="26"
@@ -63,7 +69,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
                         />
                     </svg>
                 </p>
-                <p className="text-[#AFAFAF] font-normal text-xl">{more}</p>
+                <p className="text-[#AFAFAF] font-normal text-base">{more}</p>
             </div>
             <div className="border-b border-[#575757] rounded-xl mt-3"></div>
             <ul className="font-normal text-lg flex-col flex gap-y-1.5 mt-3">

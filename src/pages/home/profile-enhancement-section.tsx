@@ -2,7 +2,7 @@ import { Buttons } from "./buttons"
 
 export const ProfileEnhancementSection = () => {
     return (
-        <div className="mr-3.5 flex justify-center md:mr-0 -mt-6">
+        <div className="mr-3.5 flex justify-center md:mr-0 -mt-6 relative">
             <div className="container-xs flex justify-center px-[52px] md:px-5">
                 <div className="w-full">
                     <div>
@@ -18,6 +18,11 @@ export const ProfileEnhancementSection = () => {
                     </div>
                 </div>
             </div>
+            <img src="/icons/happy.svg" alt="" className="absolute top-2/4 right-3/4 -mt-10" />
+            <img src="/icons/smile.svg" alt="" className="absolute left-1/3 -top-4 mr-10" />
+            <img src="/icons/celebrate.svg" alt="" className="absolute left-2/3 top-2/4 ml-32 mt-10" />
+            <img src="/icons/shine.svg" alt="" className="absolute left-1/4 top-2/5  mt-28 " />
+            <img src="/icons/fill-star.svg" alt="" className="absolute left-2/3 top-1/5 ml-32 mt-10" />
         </div>
     )
 }

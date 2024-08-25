@@ -24,7 +24,7 @@ export default function UserProfile({
             <Heading size="headingxs" as="h3" className={textClassName}>
                 {headingText}
             </Heading>
-            <Text size="texts" as="p" className="w-full leading-[19px]">
+            <Text size="texts" as="p" className="w-full leading-[19px] max-w-xs">
                 {descriptionText}
             </Text>
         </div>

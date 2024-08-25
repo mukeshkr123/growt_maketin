@@ -27,7 +27,7 @@ const HomePage = () => {
                     <div>
                         <OurServicesSection />
                         <ApproachSection />
-                        <div className="mt-[52px]">
+                        <div className="mt-[80px]">
                             <DefineAndDesignSection />
                         </div>
                     </div>

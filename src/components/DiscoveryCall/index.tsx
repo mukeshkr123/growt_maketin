@@ -21,8 +21,12 @@ export default function DiscoveryCall({
     return (
         <div
             {...props}
-            className={`flex flex-col  bg-[url('/public/images/prcess_bg.png')] items-start w-full gap-3 px-[30px] py-[22px] sm:p-5 cursor-pointer hover:shadow-bs ${props.className || ""
+            className={`flex flex-col 
+                  items-start w-full justify-between bg-[#1919190A] gap-3 px-[30px] py-[22px] sm:p-5 cursor-pointer hover:shadow-bs ${props.className || ""
                 }`}
+            style={{
+                boxShadow: "0px 4px 55.8px 0px #FFFFFF12 inset"
+            }}
 
         >
             <Img
@@ -33,7 +37,7 @@ export default function DiscoveryCall({
             <Heading size="headingxs" as="h3" className={textClassName}>
                 {headingText}
             </Heading>
-            <Text size="texts" as="p" className="mb-14 w-full leading-[19px] text-[#CACACA] font-normal text-xl">
+            <Text size="texts" as="p" className="mb-5 w-full leading-[19px] text-[#CACACA] font-normal text-xl">
                 {descriptionText}
             </Text>
         </div>

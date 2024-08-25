@@ -1,6 +1,6 @@
 export const ContactSection = () => {
     return (
-        <section className="w-full">
+        <section className="w-full max-w-6xl mx-auto mb-40">
             <div className="max-w-5xl mx-auto flex flex-col gap-y-6">
                 <h3 className="text-white text-4xl text-center font-semibold">Contact us</h3>
                 <p className="text-[#CACACA] text-2xl text-center">Contact us today for a free consultation and unlock the true power of your LinkedIn profile with us. Book a call right now.
@@ -52,7 +52,7 @@ export const ContactSection = () => {
                         ></textarea>
                         <div className="w-full items-center mt-8 flex justify-center">
                             <button
-                                className="text-xl py-3 px-6 rounded-lg font-normal text-white uppercase"
+                                className="text-lg py-2.5 px-4 rounded-lg font-normal text-white uppercase"
                                 style={{
                                     background: `
 linear-gradient(0deg, #0164C6, #0164C6),
@@ -69,7 +69,7 @@ linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100
                     </form>
 
                 </div>
-                <div className="flex-1">
+                <div className="w-[40%]">
                     <img src="/images/star-img.png" alt="" />
                 </div>
             </div>

@@ -32,13 +32,15 @@ const servicesGrid = [
 ];
 
 
+
+
 export const ProcessSection = () => {
     return (
         <>
             {/* our process section */}
             <div className="flex w-[92%] flex-col gap-12 md:w-full md:px-5">
                 <div className="container-xs flex flex-col items-center px-14 md:px-5">
-                    <Heading as="h6" className="!text-blue-300 font-semibold text-5xl text-center">
+                    <Heading as="h6" className="!text-blue-300 font-semibold text-4xl text-center">
                         Our Process
                     </Heading>
                 </div>
