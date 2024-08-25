@@ -27,6 +27,7 @@ const Heading: React.FC<React.PropsWithChildren<HeadingProps>> = ({
 }) => {
     const Component = as || "h6";
     return (
+        //@ts-ignore
         <Component
             className={`text-purple-a100 font-bricolagegrotesque ${className} ${sizes[size]}`}
             {...restProps}
