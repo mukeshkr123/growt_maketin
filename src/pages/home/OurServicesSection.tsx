@@ -42,6 +42,8 @@ export const OurServicesSection = () => {
                             'LinkedIn Premium 1',
                             '1 - half-hour session',
                         ]}
+                        className="border-b-[2px] border-[#60DC7B]"
+
                     />
                     <PricingCard
                         title="Standard"
@@ -73,6 +75,7 @@ export const OurServicesSection = () => {
                             'LinkedIn Premium 1',
                             '1 - half-hour session',
                         ]}
+                        className="border-b-[2px] border-[#E6AF44]"
                     />
                 </div>
             </div>
