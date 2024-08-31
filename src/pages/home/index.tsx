@@ -16,9 +16,9 @@ const HomePage = () => {
                     content=""
                 />
             </Helmet>
-            <div className="w-full bg-black-900 font-bricolage">
+            <div className="w-full bg-black-900 font-bricolage overflow-hidden">
                 <div className="mb-1">
-                    <div className="h-[770px] relative bg-[url(/public/images/img_group_10.png)] bg-cover bg-no-repeat md:h-auto">
+                    <div className="h-[770px] sm:h-[700px] relative bg-[url(/public/images/img_group_10.png)] bg-cover bg-no-repeat md:h-auto">
                         <div className="mb-9 flex flex-col gap-[82px] md:gap-[61px] sm:gap-[41px]">
                             <Header />
                             <ProfileEnhancementSection />
@@ -32,7 +32,7 @@ const HomePage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mx-7 mt-[97px] flex flex-col items-end  gap-[130px] md:mx-0 md:gap-[97px] sm:gap-[65px]">
+                <div className="mx-7 mt-[97px] sm:mt-12 flex flex-col items-end  gap-[130px] md:mx-0 md:gap-[97px] sm:gap-[65px]">
                     <ProcessSection />
                     <ContactSection />
                 </div>

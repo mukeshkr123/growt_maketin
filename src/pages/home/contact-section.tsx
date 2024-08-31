@@ -1,15 +1,17 @@
+// import Spline from "@splinetool/react-spline"
+
 export const ContactSection = () => {
     return (
         <section className="w-full max-w-6xl mx-auto mb-40">
             <div className="max-w-5xl mx-auto flex flex-col gap-y-6">
                 <h3 className="text-white text-4xl text-center font-semibold">Contact us</h3>
-                <p className="text-[#CACACA] text-2xl text-center">Contact us today for a free consultation and unlock the true power of your LinkedIn profile with us. Book a call right now.
+                <p className="text-[#CACACA] text-2xl text-center sm:text-base sm:px-6">Contact us today for a free consultation and unlock the true power of your LinkedIn profile with us. Book a call right now.
                 </p>
             </div>
 
-            <div className="mt-24 flex w-full max-w-7xl mx-auto items-center">
+            <div className="mt-24 flex w-full max-w-7xl mx-auto items-center md:flex-col">
                 <div className="flex-1">
-                    <form className="flex w-full flex-col placeholder:text-[#656565] gap-y-2 max-w-lg">
+                    <form className="flex w-full flex-col placeholder:text-[#656565] gap-y-2 max-w-lg md:min-w-[320px]">
                         <input
                             type="text"
                             name="fullName"
@@ -69,8 +71,10 @@ linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100
                     </form>
 
                 </div>
-                <div className="w-[40%]">
+                <div className="w-[40%] sm:mt-12">
                     <img src="/images/star-img.png" alt="" />
+                    {/* TODO: replace with original url  */}
+                    {/* <Spline scene="https://prod.spline.design/wP5JM0Ppw0yvu-2A/scene.splinecode" />  */}
                 </div>
             </div>
         </section>

@@ -1,9 +1,9 @@
 
 export const Buttons = () => {
     return (
-        <div className="space-x-5 mt-9 max-w-4xl mx-auto flex items-center justify-center">
+        <div className="space-x-5 mt-9 sm:mt-0 max-w-4xl mx-auto flex items-center justify-center sm:flex-col sm:gap-y-4">
             <button
-                className="text-lg py-2.5 px-5 rounded-lg font-normal text-white uppercase"
+                className="text-lg sm:text-sm py-2.5 px-5 rounded-lg font-normal text-white uppercase"
                 style={{
                     background: `
 linear-gradient(0deg, #0164C6, #0164C6),
@@ -18,6 +18,6 @@ linear-gradient(180deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0) 100
                 <span className="font-bold">Book your free</span>  consultation
             </button>
 
-            <button className="text-lg text-white border-[#475467] border py-2.5 px-5 rounded-lg">CONTACT US</button>
+            <button className="text-lg sm:text-sm text-white border-[#475467] border py-2.5 px-5 rounded-lg">CONTACT US</button>
         </div>)
 }

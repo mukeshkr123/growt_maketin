@@ -23,7 +23,7 @@ export const PricingCard: React.FC<PricingCardProps> = ({
 
     return (
         <div
-            className={`p-6 relative text-[#B4B4B4] flex flex-col gap-y-4 w-[480px] pb-20 ${className} ${isActive ? "h-[620px] border-[#3F90FF] border-[1px]" : " h-[540px]"} `}
+            className={`p-6 relative text-[#B4B4B4] flex flex-col gap-y-4 sm:w-[340px] md:w-[450px] lg:w-[480px] pb-20 ${className} ${isActive ? "h-[620px] border-[#3F90FF] border-[1px]" : " h-[540px]"} `}
             style={{
                 background: 'linear-gradient(149.64deg, rgba(25, 25, 25, 0.77) 21.24%, rgba(14, 14, 14, 0.77) 105.43%)',
                 borderRadius: '10px',

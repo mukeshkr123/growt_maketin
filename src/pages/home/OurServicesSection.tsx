@@ -8,26 +8,27 @@ export const OurServicesSection = () => {
         <div className="flex flex-col items-center">
             <div className="flex justify-center self-stretch rounded-[60px] border-t border-solid border-blue-a100 bg-black-900 px-14 py-16 md:p-5">
                 <div className="mb-1 flex w-[86%] flex-col items-center md:w-full relative">
-                    <div className="flex items-start justify-end self-stretch md:flex-col">
-                        <Heading as="h2" className='text-[#FC69FF] font-semibold text-5xl'>About Us</Heading>
-                        <div className="mt-[22px] flex w-[42%] rotate-[15deg] justify-end self-end md:w-full md:self-auto">
+                    <div className="md:flex items-start justify-end self-stretch md:flex-col hidden">
+                        <div className="mt-[22px] flex w-[42%] rotate-[15deg] justify-end self-end md:w-full md:self-auto sm:hidden">
                             <img src="/icons/we-care.svg" alt="" className='absolute -mt-16' />
                         </div>
                     </div>
-                    <div className="container-xs md:px-5 mt-10">
-                        <Text size="text2x1" as="p" className="text-center leading-9">
+                    <div className="container-xs md:px-5 sm:px-0">
+                        <Heading as="h2" className='text-[#FC69FF] md:mb-12 mt-4 sm:text-3xl sm:mb-6 font-semibold text-center text-5xl'>About Us</Heading>
+
+                        <Text size="text2x1" as="p" className="text-center sm:text-base leading-9">
                             We are a team of dynamic marketing experts who aim to revamp and boost your LinkedIn profiles with powerful personal branding. Whether you are a CEO or have a business page, we assist you with a solid presence on LinkedIn. Our strategic content production and data-driven strategy guarantee that your message reaches the proper audience and produces the desired outcomes.
                         </Text>
                     </div>
                 </div>
             </div>
 
-            <div className="container-xs mt-3 flex flex-col items-center px-14 md:px-5 gap-y-24">
+            <div className="container-xs mt-3 flex flex-col items-center px-14 md:px-5 sm:gap-y-10 gap-y-24">
                 <Heading as="h3" className="text-[#C6FF69]">
                     Our Services
                 </Heading>
 
-                <div className="flex gap-8 mx-auto max-w-6xl items-center">
+                <div className="gap-8 mx-auto max-w-6xl items-center grid grid-cols-3 md:grid-cols-1">
                     <PricingCard
                         title="Starter"
                         price="$499"

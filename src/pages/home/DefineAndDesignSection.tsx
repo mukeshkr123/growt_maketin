@@ -8,7 +8,7 @@ export default function DefineAndDesignSection() {
             <div className="relative flex h-[345px] items-center justify-center bg-[url('/public/images/dd_bg.svg')] bg-cover bg-no-repeat py-[50px] md:h-auto md:py-5">
                 <div className="container-xs mb-1.5 flex justify-center max-w-6xl mx-auto px-7 md:px-5">
                     <img src="/icons/our_dd.svg" alt="" className="absolute -top-10 left-[10%]" />
-                    <div className="flex w-full gap-[130px] md:flex-col">
+                    <div className="flex w-full gap-[130px] sm:gap-10 sm:px-10 md:flex-col">
                         <Suspense fallback={<div>Loading feed...</div>}>
                             <UserProfile
                                 imageUrl={"images/pencil.png"}

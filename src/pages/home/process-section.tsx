@@ -38,14 +38,14 @@ export const ProcessSection = () => {
     return (
         <>
             {/* our process section */}
-            <div className="flex w-[92%] flex-col gap-12 md:w-full md:px-5">
+            <div className="flex w-[92%] flex-col gap-12 sm:gap-6 md:w-full md:px-5">
                 <div className="container-xs flex flex-col items-center px-14 md:px-5">
-                    <Heading as="h6" className="!text-blue-300 font-semibold text-4xl text-center">
+                    <Heading as="h6" className="!text-blue-300 font-semibold text-4xl text-center sm:text-3xl">
                         Our Process
                     </Heading>
                 </div>
                 <div className="flex items-start gap-7 md:flex-col">
-                    <Text size="text2x1" as="p" className="mt-9 w-[32%] leading-9 md:mt-0 md:w-full text-[#CACACA] font-light">
+                    <Text size="text2x1" as="p" className="mt-9 w-[32%] leading-9 md:mt-0 md:w-full text-[#CACACA] font-light sm:text-lg">
                         From strategy to execution, we are your dedicated partner in LinkedIn success.
                     </Text>
                     <div className="mr-[74px] grid flex-1 grid-cols-2 gap-7 self-center md:mr-0 md:grid-cols-1 md:self-stretch">

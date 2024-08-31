@@ -9,15 +9,15 @@ export const Header = ({ ...props }: Props) => {
     return (
         <header
             {...props}
-            className={`${props.className} flex items-center mt-6 px-16 md:mx-0  border-solid bg-black-900_05 relative`}
+            className={`${props.className} flex items-center mt-6 px-16 md:mx-0 md:px-0  border-solid bg-black-900_05 relative`}
         >
-            <div className="flex w-full items-center justify-between gap-5 md:flex-col">
+            <div className="flex w-full items-center justify-between md:justify-start gap-5 md:flex-col">
                 <Img
                     src="images/logo.svg"
                     alt="Header Logo"
-                    className="h-[50px] w-[200px] object-contain"
+                    className="h-[50px] w-[200px] object-contain sm:mr-40"
                 />
-                <ul className="mb-2 flex flex-wrap gap-10 self-end md:self-auto">
+                <ul className="mb-2 flex flex-wrap gap-10 self-end md:self-auto md:hidden">
                     <li>
                         <a href="#">
                             <Text as="p" className="text-white-a700 text-base font-normal">
@@ -48,7 +48,7 @@ export const Header = ({ ...props }: Props) => {
                     </li>
                 </ul>
                 <button
-                    className="rounded-md font-medium text-base text-white px-5 py-2"
+                    className="rounded-md font-medium text-base text-white px-5 py-2 md:hidden"
                     style={{
                         background: `
                          linear-gradient(0deg, #0164C6, #0164C6),

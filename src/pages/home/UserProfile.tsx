@@ -20,7 +20,7 @@ export default function UserProfile({
 }: Props) {
     return (
         <div {...props} className={`${props.className} flex flex-col items-start w-[32%] md:w-full gap-3`}>
-            <Img src={imageUrl} alt="Close Image" className="h-[96px] w-[26%] object-contain" />
+            <Img src={imageUrl} alt="Close Image" className="h-[96px] w-[26%] object-contain sm:w-[24%]" />
             <Heading size="headingxs" as="h3" className={textClassName}>
                 {headingText}
             </Heading>

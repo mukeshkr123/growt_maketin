@@ -32,12 +32,12 @@ export default function DiscoveryCall({
             <Img
                 src={closeImage}
                 alt="Close Image"
-                className="h-[96px] w-[24%] object-contain"
+                className="h-[96px] w-[24%] sm:w-[20%] object-contain"
             />
-            <Heading size="headingxs" as="h3" className={textClassName}>
+            <Heading size="headingxs" as="h3" className={`${textClassName} sm:text-[28px]`}>
                 {headingText}
             </Heading>
-            <Text size="texts" as="p" className="mb-5 w-full leading-[19px] text-[#CACACA] font-normal text-xl">
+            <Text size="texts" as="p" className="mb-5 w-full leading-[19px] text-[#CACACA] font-normal text-xl sm:text-sm">
                 {descriptionText}
             </Text>
         </div>
