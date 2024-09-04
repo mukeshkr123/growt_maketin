@@ -1,8 +1,31 @@
-import Spline from "@splinetool/react-spline"
+import { useState } from "react";
+import Spline from "@splinetool/react-spline";
 
 export const ContactSection = () => {
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "",
+        phone: "",
+        linkedin: "",
+        source: "",
+        message: "",
+    });
+
+    const handleInputChange = (e: any) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+    };
+
+    const handleSubmit = (e: any) => {
+        e.preventDefault();
+        console.log("Form Data:", formData);
+    };
+
     return (
-        <section className="w-full max-w-6xl mx-auto mb-40" >
+        <section className="w-full max-w-6xl mx-auto mb-40">
             <div className="max-w-5xl mx-auto flex flex-col gap-y-6">
                 <h3 className="text-white text-4xl text-center font-semibold">Contact us</h3>
                 <p className="text-[#CACACA] text-2xl text-center sm:text-base sm:px-6">
@@ -12,45 +35,61 @@ export const ContactSection = () => {
 
             <div className="mt-24 flex w-full max-w-7xl mx-auto items-center md:flex-col" id="contact-us">
                 <div className="flex-1">
-                    <form className="flex w-full flex-col placeholder:text-[#656565] gap-y-2 max-w-lg md:min-w-[320px]">
+                    <form
+                        className="flex w-full flex-col placeholder:text-[#656565] gap-y-2 max-w-lg md:min-w-[320px]"
+                        onSubmit={handleSubmit}
+                    >
                         <input
                             type="text"
                             name="fullName"
                             placeholder="Full Name"
                             className="bg-[#080C12] border-b border-[#656565] text-white placeholder:text-[#656565] focus:border-[#0164C6] focus:border-b-2 focus:outline-none py-2.5"
+                            value={formData.fullName}
+                            onChange={handleInputChange}
                         />
                         <input
                             type="email"
                             name="email"
                             placeholder="Email ID"
                             className="bg-[#080C12] border-b border-[#656565] text-white placeholder:text-[#656565] focus:border-[#0164C6] focus:border-b-2 focus:outline-none py-2.5"
+                            value={formData.email}
+                            onChange={handleInputChange}
                         />
                         <input
                             type="tel"
                             name="phone"
                             placeholder="Phone"
                             className="bg-[#080C12] border-b border-[#656565] text-white placeholder:text-[#656565] focus:border-[#0164C6] focus:border-b-2 focus:outline-none py-2.5"
+                            value={formData.phone}
+                            onChange={handleInputChange}
                         />
                         <input
                             type="text"
                             name="linkedin"
                             placeholder="LinkedIn ID"
                             className="bg-[#080C12] border-b border-[#656565] text-white placeholder:text-[#656565] focus:border-[#0164C6] focus:border-b-2 focus:outline-none py-2.5"
+                            value={formData.linkedin}
+                            onChange={handleInputChange}
                         />
                         <input
                             type="text"
                             name="source"
                             placeholder="How did you hear about us"
                             className="bg-[#080C12] border-b border-[#656565] text-white placeholder:text-[#656565] focus:border-[#0164C6] focus:border-b-2 focus:outline-none py-2.5"
+                            value={formData.source}
+                            onChange={handleInputChange}
                         />
                         <textarea
                             name="message"
                             placeholder="Message"
                             rows={3}
                             className="bg-[#080C12] border-b border-[#656565] text-white placeholder:text-[#656565] focus:border-[#0164C6] focus:border-b-2 focus:outline-none py-2.5"
+                            value={formData.message}
+                            onChange={handleInputChange}
                         ></textarea>
                         <div className="w-full items-center mt-8 flex justify-center">
                             <button
+                                type="submit"
                                 className="text-lg py-2.5 px-4 rounded-lg font-normal text-white uppercase"
                                 style={{
                                     background: `
@@ -73,5 +112,5 @@ export const ContactSection = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
