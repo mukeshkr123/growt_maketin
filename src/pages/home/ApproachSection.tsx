@@ -4,7 +4,7 @@ import { Heading } from "../../components/Heading";
 export default function ApproachSection() {
     return (
         <>
-            <div className="mt-[66px] flex flex-col items-center max-w-6xl mx-auto">
+            <div className="mt-[66px] flex flex-col items-center max-w-6xl mx-auto" id="our-approach">
                 <div className="container-xs flex flex-col items-center gap-[38px] md:px-5">
                     <Heading as="h5" className="text-orange-200 sm:text-3xl">
                         Our Approach

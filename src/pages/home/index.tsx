@@ -10,7 +10,7 @@ const HomePage = () => {
     return (
         <>
             <Helmet>
-                <title>Linkdein Services- Boost your Profile</title>
+                <title>Linkedin Services- Boost your Profile</title>
                 <meta
                     name="description"
                     content=""
@@ -18,7 +18,7 @@ const HomePage = () => {
             </Helmet>
             <div className="w-full bg-black-900 font-bricolage overflow-hidden">
                 <div className="mb-1">
-                    <div className="h-[770px] sm:h-[700px] relative bg-[url(/public/images/img_group_10.png)] bg-cover bg-no-repeat md:h-auto">
+                    <div className="h-[770px] sm:h-[700px] relative bg-[url(/public/images/bg+border.svg)] bg-cover bg-no-repeat md:h-auto">
                         <div className="mb-9 flex flex-col gap-[82px] md:gap-[61px] sm:gap-[41px]">
                             <Header />
                             <ProfileEnhancementSection />

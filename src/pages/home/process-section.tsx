@@ -5,25 +5,25 @@ import { Heading } from "../../components/Heading";
 
 const servicesGrid = [
     {
-        closeImage: "/icons/telephone.png",
+        closeImage: "/icons/telephone.svg",
         headingText: "Discovery call",
         descriptionText: "Let's chat! We'll get to know you, your business, and your LinkedIn aspirations.",
         textClassName: "text-[#FFBA69]",
     },
     {
-        closeImage: "/icons/profile.png",
+        closeImage: "/icons/profile.svg",
         headingText: "Profile Transformation",
         descriptionText: "To draw in your target audience, we'll optimize your profile.",
         textClassName: "text-[#C6FF69]"
     },
     {
-        closeImage: "/icons/note.png",
+        closeImage: "/icons/note.svg",
         headingText: "Content Calendar Creation",
         descriptionText: "We'll create a regular content plan that speaks to your target audience and captures your unique voice.",
         textClassName: "text-[#69AEFF]"
     },
     {
-        closeImage: "/icons/rocket.png",
+        closeImage: "/icons/rocket.svg",
         headingText: "Implementation and Reporting",
         descriptionText: "To keep an eye on your progress of engagement and content creation, we'll provide you with detailed monthly data. ",
         textClassName: "text-[#B469FF]"
@@ -37,8 +37,7 @@ const servicesGrid = [
 export const ProcessSection = () => {
     return (
         <>
-            {/* our process section */}
-            <div className="flex w-[92%] flex-col gap-12 sm:gap-6 md:w-full md:px-5">
+            <div className="flex w-[92%] flex-col gap-12 sm:gap-6 md:w-full md:px-5" id="process">
                 <div className="container-xs flex flex-col items-center px-14 md:px-5">
                     <Heading as="h6" className="!text-blue-300 font-semibold text-4xl text-center sm:text-3xl">
                         Our Process

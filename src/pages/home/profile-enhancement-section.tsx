@@ -22,8 +22,9 @@ export const ProfileEnhancementSection = () => {
                 <img src="/icons/happy.svg" alt="" className="absolute top-2/4 right-3/4 -mt-10 sm:hidden" />
                 <img src="/icons/smile.svg" alt="" className="absolute left-1/3 -top-4 mr-10 sm:hidden" />
                 {/* <img src="/icons/celebrate.svg" alt="" className="absolute left-2/3 top-2/4 ml-32 mt-10" /> */}
-                <img src="/icons/shine.svg" alt="" className="absolute left-1/4 top-2/5  mt-28 sm:hidden" />
+                {/* <img src="/icons/shine.svg" alt="" className="absolute left-1/4 top-2/5  mt-28 sm:hidden" /> */}
                 <img src="/icons/fill-star.svg" alt="" className="absolute left-2/3 top-1/5 ml-32 mt-10 sm:hidden" />
+                <img src="/icons/linkdein-logo.svg" alt="" className="absolute left-[27%] top-[15%] mb-12 md:hidden" />
             </div>
             <div className="absolute w-full flex items-center justify-center bottom-0 sm:bottom-12 ">
                 <img src="/images/linkdein_images.png" className="sm:w-[85%] sm:mx-auto" />

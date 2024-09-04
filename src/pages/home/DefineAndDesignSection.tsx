@@ -11,7 +11,7 @@ export default function DefineAndDesignSection() {
                     <div className="flex w-full gap-[130px] sm:gap-10 sm:px-10 md:flex-col">
                         <Suspense fallback={<div>Loading feed...</div>}>
                             <UserProfile
-                                imageUrl={"images/pencil.png"}
+                                imageUrl={"images/pencil.svg"}
                                 headingText="Define"
                                 textClassName="text-[#FC69FF]"
                                 descriptionText="We delve deep into your goals, your target audience, and brand vision."
@@ -19,14 +19,14 @@ export default function DefineAndDesignSection() {
                             />
                             <UserProfile
                                 headingText="Design"
-                                imageUrl={"images/design.png"}
+                                imageUrl={"images/design.svg"}
                                 textClassName="text-[#FFC774]"
                                 descriptionText="Leveraging market research, we create a tailored content plan and optimize your profile for maximum impact."
                                 className="h-[144px] md:h-auto"
                             />
                             <UserProfile
                                 headingText="Develop"
-                                imageUrl={"images/deliver.png"}
+                                imageUrl={"images/deliver.svg"}
                                 textClassName="text-[#9BFF92]"
                                 descriptionText="We implement the plan, track progress, and refine our approach for continuous growth."
                                 className="h-[144px] md:h-auto"
